@@ -34,7 +34,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="369" id="T0D-eS-sf7" customClass="PostTableViewCell" customModule="Continuum" customModuleProvider="target">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="postCell" rowHeight="369" id="T0D-eS-sf7" customClass="PostTableViewCell" customModule="Continuum" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="28" width="375" height="369"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="T0D-eS-sf7" id="uVr-XM-8aM">
@@ -73,7 +73,7 @@
                                     <outlet property="postCaptionLabel" destination="sfm-if-hNX" id="xbV-jz-Tyh"/>
                                     <outlet property="postCommentLabel" destination="sei-Uc-KAh" id="tX5-pl-V4X"/>
                                     <outlet property="postImage" destination="w3X-Yl-jPx" id="bQc-JX-03u"/>
-                                    <segue destination="Zk4-XN-r3z" kind="show" id="3S2-ep-Xzf"/>
+                                    <segue destination="Zk4-XN-r3z" kind="show" identifier="toPostDetailVC" id="3S2-ep-Xzf"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>

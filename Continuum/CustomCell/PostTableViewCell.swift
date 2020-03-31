@@ -14,15 +14,18 @@ class PostTableViewCell: UITableViewCell {
     @IBOutlet weak var postCaptionLabel: UILabel!
     @IBOutlet weak var postCommentLabel: UILabel!
     
-//    var post: Post {
-//        didSet {
-//
-//        }
-//    }
-//
-//    func updateViews() {
-//        postImage.image = post.photo
-//        postCaptionLabel.text = post.caption
-//
-//    }
+    var post: Post? {
+        didSet {
+            updateViews()
+        }
+    }
+
+    func updateViews() {
+        
+        guard let post = post else {return}
+        
+        postImage.image = post.photo
+        postCaptionLabel.text = post.caption
+        postCommentLabel.text = "\(post.comments.count)"
+    }
 }
