@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4E6A9D012433D6EC00B42FC9 /* CloudKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4E6A9D002433D6EC00B42FC9 /* CloudKit.framework */; };
+		4E6A9D052433DA0B00B42FC9 /* PostListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E6A9D042433DA0B00B42FC9 /* PostListTableViewController.swift */; };
+		4E6A9D072433DA9000B42FC9 /* PostDetailTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E6A9D062433DA9000B42FC9 /* PostDetailTableViewController.swift */; };
+		4E6A9D092433DB3E00B42FC9 /* AddPostTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E6A9D082433DB3E00B42FC9 /* AddPostTableViewController.swift */; };
+		4E6A9D0C2433DC8C00B42FC9 /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E6A9D0B2433DC8C00B42FC9 /* Post.swift */; };
+		4E6A9D0F2433DEF800B42FC9 /* Comment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E6A9D0E2433DEF800B42FC9 /* Comment.swift */; };
 		F7F99C392211F96400D13C4C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7F99C382211F96400D13C4C /* AppDelegate.swift */; };
 		F7F99C3E2211F96400D13C4C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F7F99C3C2211F96400D13C4C /* Main.storyboard */; };
 		F7F99C402211F96600D13C4C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F7F99C3F2211F96600D13C4C /* Assets.xcassets */; };
@@ -14,6 +20,13 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		4E6A9CFE2433D6E700B42FC9 /* Continuum.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Continuum.entitlements; sourceTree = "<group>"; };
+		4E6A9D002433D6EC00B42FC9 /* CloudKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CloudKit.framework; path = System/Library/Frameworks/CloudKit.framework; sourceTree = SDKROOT; };
+		4E6A9D042433DA0B00B42FC9 /* PostListTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostListTableViewController.swift; sourceTree = "<group>"; };
+		4E6A9D062433DA9000B42FC9 /* PostDetailTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostDetailTableViewController.swift; sourceTree = "<group>"; };
+		4E6A9D082433DB3E00B42FC9 /* AddPostTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddPostTableViewController.swift; sourceTree = "<group>"; };
+		4E6A9D0B2433DC8C00B42FC9 /* Post.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
+		4E6A9D0E2433DEF800B42FC9 /* Comment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Comment.swift; sourceTree = "<group>"; };
 		F7F99C352211F96400D13C4C /* Continuum.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Continuum.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F7F99C382211F96400D13C4C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F7F99C3D2211F96400D13C4C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -27,17 +40,65 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4E6A9D012433D6EC00B42FC9 /* CloudKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4E6A9CFF2433D6EC00B42FC9 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4E6A9D002433D6EC00B42FC9 /* CloudKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		4E6A9D022433D76A00B42FC9 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				F7F99C382211F96400D13C4C /* AppDelegate.swift */,
+				F7F99C3F2211F96600D13C4C /* Assets.xcassets */,
+				F7F99C442211F96600D13C4C /* Info.plist */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		4E6A9D032433D78900B42FC9 /* Storyboard */ = {
+			isa = PBXGroup;
+			children = (
+				F7F99C3C2211F96400D13C4C /* Main.storyboard */,
+				F7F99C412211F96600D13C4C /* LaunchScreen.storyboard */,
+			);
+			path = Storyboard;
+			sourceTree = "<group>";
+		};
+		4E6A9D0A2433DC7400B42FC9 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				4E6A9D042433DA0B00B42FC9 /* PostListTableViewController.swift */,
+				4E6A9D062433DA9000B42FC9 /* PostDetailTableViewController.swift */,
+				4E6A9D082433DB3E00B42FC9 /* AddPostTableViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		4E6A9D0D2433DC9200B42FC9 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				4E6A9D0B2433DC8C00B42FC9 /* Post.swift */,
+				4E6A9D0E2433DEF800B42FC9 /* Comment.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		F7F99C2C2211F96400D13C4C = {
 			isa = PBXGroup;
 			children = (
 				F7F99C372211F96400D13C4C /* Continuum */,
 				F7F99C362211F96400D13C4C /* Products */,
+				4E6A9CFF2433D6EC00B42FC9 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -52,11 +113,11 @@
 		F7F99C372211F96400D13C4C /* Continuum */ = {
 			isa = PBXGroup;
 			children = (
-				F7F99C382211F96400D13C4C /* AppDelegate.swift */,
-				F7F99C3C2211F96400D13C4C /* Main.storyboard */,
-				F7F99C3F2211F96600D13C4C /* Assets.xcassets */,
-				F7F99C412211F96600D13C4C /* LaunchScreen.storyboard */,
-				F7F99C442211F96600D13C4C /* Info.plist */,
+				4E6A9CFE2433D6E700B42FC9 /* Continuum.entitlements */,
+				4E6A9D022433D76A00B42FC9 /* Resources */,
+				4E6A9D032433D78900B42FC9 /* Storyboard */,
+				4E6A9D0A2433DC7400B42FC9 /* Controllers */,
+				4E6A9D0D2433DC9200B42FC9 /* Model */,
 			);
 			path = Continuum;
 			sourceTree = "<group>";
@@ -93,6 +154,7 @@
 				TargetAttributes = {
 					F7F99C342211F96400D13C4C = {
 						CreatedOnToolsVersion = 10.1;
+						LastSwiftMigration = 1140;
 					};
 				};
 			};
@@ -133,6 +195,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				F7F99C392211F96400D13C4C /* AppDelegate.swift in Sources */,
+				4E6A9D0F2433DEF800B42FC9 /* Comment.swift in Sources */,
+				4E6A9D052433DA0B00B42FC9 /* PostListTableViewController.swift in Sources */,
+				4E6A9D092433DB3E00B42FC9 /* AddPostTableViewController.swift in Sources */,
+				4E6A9D072433DA9000B42FC9 /* PostDetailTableViewController.swift in Sources */,
+				4E6A9D0C2433DC8C00B42FC9 /* Post.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -278,16 +345,17 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = Continuum/Continuum.entitlements;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 77U2457882;
-				INFOPLIST_FILE = Continuum/Info.plist;
+				DEVELOPMENT_TEAM = ZZR7FKBFJP;
+				INFOPLIST_FILE = Continuum/Resources/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.trevoradcock.Continuum;
+				PRODUCT_BUNDLE_IDENTIFIER = com.wong.Continuum;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -296,16 +364,17 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = Continuum/Continuum.entitlements;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 77U2457882;
-				INFOPLIST_FILE = Continuum/Info.plist;
+				DEVELOPMENT_TEAM = ZZR7FKBFJP;
+				INFOPLIST_FILE = Continuum/Resources/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.trevoradcock.Continuum;
+				PRODUCT_BUNDLE_IDENTIFIER = com.wong.Continuum;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
