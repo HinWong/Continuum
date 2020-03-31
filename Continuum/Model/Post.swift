@@ -6,7 +6,7 @@
 //  Copyright © 2020 trevorAdcock. All rights reserved.
 //
 
-import Foundation
+import UIKit
 
 class Post {
     
@@ -25,8 +25,7 @@ class Post {
         }
     }
     
-    init(photo: UIImage?, photoData: Data, timestamp: Date = Date(), caption: String, comments: [Comment] = []) {
-        self.photoData = photoData
+    init(photo: UIImage?, timestamp: Date = Date(), caption: String, comments: [Comment] = []) {
         self.timestamp = timestamp
         self.caption = caption
         self.comments = comments
