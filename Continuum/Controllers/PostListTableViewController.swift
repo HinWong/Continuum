@@ -2,7 +2,7 @@
 //  PostListTableViewController.swift
 //  Continuum
 //
-//  Created by Hin Wong on 3/31/20.
+//  Created by Hin Wong on 4/1/20.
 //  Copyright © 2020 trevorAdcock. All rights reserved.
 //
 
@@ -23,7 +23,7 @@ class PostListTableViewController: UITableViewController {
 
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "reuseIdentifier", for: indexPath)
+        let cell = tableView.dequeueReusableCell(withIdentifier: "postCell", for: indexPath)
 
         // Configure the cell...
 

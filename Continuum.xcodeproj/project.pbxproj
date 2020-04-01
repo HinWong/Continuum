@@ -7,9 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4E3C67B12435378500B88199 /* PostListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E3C67B02435378500B88199 /* PostListTableViewController.swift */; };
+		4E3C67B3243538AF00B88199 /* PostDetailTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E3C67B2243538AF00B88199 /* PostDetailTableViewController.swift */; };
 		4E6A9D012433D6EC00B42FC9 /* CloudKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4E6A9D002433D6EC00B42FC9 /* CloudKit.framework */; };
-		4E6A9D052433DA0B00B42FC9 /* PostListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E6A9D042433DA0B00B42FC9 /* PostListTableViewController.swift */; };
-		4E6A9D072433DA9000B42FC9 /* PostDetailTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E6A9D062433DA9000B42FC9 /* PostDetailTableViewController.swift */; };
 		4E6A9D092433DB3E00B42FC9 /* AddPostTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E6A9D082433DB3E00B42FC9 /* AddPostTableViewController.swift */; };
 		4E6A9D0C2433DC8C00B42FC9 /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E6A9D0B2433DC8C00B42FC9 /* Post.swift */; };
 		4E6A9D0F2433DEF800B42FC9 /* Comment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E6A9D0E2433DEF800B42FC9 /* Comment.swift */; };
@@ -23,10 +23,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		4E3C67B02435378500B88199 /* PostListTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostListTableViewController.swift; sourceTree = "<group>"; };
+		4E3C67B2243538AF00B88199 /* PostDetailTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostDetailTableViewController.swift; sourceTree = "<group>"; };
 		4E6A9CFE2433D6E700B42FC9 /* Continuum.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Continuum.entitlements; sourceTree = "<group>"; };
 		4E6A9D002433D6EC00B42FC9 /* CloudKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CloudKit.framework; path = System/Library/Frameworks/CloudKit.framework; sourceTree = SDKROOT; };
-		4E6A9D042433DA0B00B42FC9 /* PostListTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostListTableViewController.swift; sourceTree = "<group>"; };
-		4E6A9D062433DA9000B42FC9 /* PostDetailTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostDetailTableViewController.swift; sourceTree = "<group>"; };
 		4E6A9D082433DB3E00B42FC9 /* AddPostTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddPostTableViewController.swift; sourceTree = "<group>"; };
 		4E6A9D0B2433DC8C00B42FC9 /* Post.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
 		4E6A9D0E2433DEF800B42FC9 /* Comment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Comment.swift; sourceTree = "<group>"; };
@@ -83,9 +83,9 @@
 		4E6A9D0A2433DC7400B42FC9 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				4E6A9D042433DA0B00B42FC9 /* PostListTableViewController.swift */,
-				4E6A9D062433DA9000B42FC9 /* PostDetailTableViewController.swift */,
 				4E6A9D082433DB3E00B42FC9 /* AddPostTableViewController.swift */,
+				4E3C67B02435378500B88199 /* PostListTableViewController.swift */,
+				4E3C67B2243538AF00B88199 /* PostDetailTableViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -229,13 +229,13 @@
 			files = (
 				F7F99C392211F96400D13C4C /* AppDelegate.swift in Sources */,
 				4E6A9D0F2433DEF800B42FC9 /* Comment.swift in Sources */,
+				4E3C67B3243538AF00B88199 /* PostDetailTableViewController.swift in Sources */,
 				4E6A9D142433E8B900B42FC9 /* PostError.swift in Sources */,
-				4E6A9D052433DA0B00B42FC9 /* PostListTableViewController.swift in Sources */,
 				4E6A9D092433DB3E00B42FC9 /* AddPostTableViewController.swift in Sources */,
 				4E6A9D112433E76600B42FC9 /* PostController.swift in Sources */,
-				4E6A9D072433DA9000B42FC9 /* PostDetailTableViewController.swift in Sources */,
 				4E6A9D0C2433DC8C00B42FC9 /* Post.swift in Sources */,
 				4E6A9D1A2433EE5300B42FC9 /* PostTableViewCell.swift in Sources */,
+				4E3C67B12435378500B88199 /* PostListTableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
